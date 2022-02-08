@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1350">
+    <link href="images/icon.png" rel="icon" type="image/png" sizes="32x32" ><!--홈페이지아이콘-->
+    <title>community</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+    <div id="header">
+        <div id="header_inner">
+            <div id="logo"><a href="https://soyeonpp.github.io/haemum"><img src="images/logo.png" alt="해뭄도시락 로고"></a></div>
+            <!--logo E-->
+            <ul>
+                <!--메뉴-->
+                <li><a href="https://soyeonpp.github.io/haemum_sub1">BRAND<span></span></a></li>
+                <li><a href="https://soyeonpp.github.io/haemum_sub2">MENU<span></span></a></li>
+                <li><a href="https://soyeonpp.github.io/haemum_sub3">STORE<span></span></a></li>
+                <li><a href="https://soyeonpp.github.io/haemum_sub4">EVENT<span></span></a></li>
+                <li><a href="https://soyeonpp.github.io/haemum_sub5">COMMUNITY<span></span></a></li>
+            </ul>
+            <ol>
+                <!--회원가입,로그인-->
+
+                <li><a href="#"><img src="images/join.png" alt="회원가입"></a></li>
+                <li><a href="#"><img src="images/login.png" alt="로그인"></a></li>
+            </ol>
+        </div>
+        <!--header_inner E-->
+    </div>
+    <!--header E-->
+    <div id="mb">
+        <img src="images/mainbanner.jpg" alt="메인베너">
+    </div><!--mb E-->
+    <div id="question">
+        <div id="question_inner">
+            <h2>자주하는 질문</h2>
+            <div id="input">
+                <select name="class" id="class">
+                    <option value="전체">전체</option>
+                    <option value="계정">계정</option>
+                    <option value="결제">결제</option>
+                    <option value="점포">점포</option>
+                    <option value="이용안내">이용안내</option>
+                </select>
+                <input type="text" placeholder="검색어 입력" id="text">
+                <input type="button" value="검색" id="button">
+            </div><!--input E-->
+            <div class="notice">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>계정</span> 회원탈퇴 후 재가입을 할 수 있나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                            네. 회원탈퇴를 하더라도 즉시 재가입이 가능합니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>계정</span>회원정보는 어떻게 업데이트 할 수 있나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        화면 오른쪽 상단에 <br>
+                        회원정보>회원정보 수정 버튼을 클릭하여 업데이트할 수 있습니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>결제</span>결제가 이중으로 되었어요. 어떻게 해야하나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        이중으로 결제가 된 경우 Q&A (1:1 고객문의, 고객센터 전화)를 이용하셔서 다음과 같은 사항을 알려주시면<br>
+                        조취해드리겠습니다. (환불을 위해 카드번호-결제시간-결제금액을 미리 확인 후 이용해주시면 더욱 빠른 조취가 가능합니다.)<br>
+                        오프라인 매장 이용시 해당 문제가 발생하시면 해당 매장 업주분께 결제 취소 요청을 하시면 더욱 신속하게 조취를 취해드립니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>점포</span>점포 영업시간은 어디서 확인 할 수 있나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        홈페이지 상단의 STORE 창에서 해당 매장을 검색하시면 전화번호 및 영업시간을 확인하실 수 있습니다.<br>
+                        공휴일의 경우 매장마다 상이하여 해당 매장에 전화하시어 확인 후 방문하시면 더욱 정확한 확인이 가능합니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>점포</span>제 주변에 있는 해뭄 점포를 어떻게 찾을 수 있나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        홈페이지 상단의 STORE 창에서 위치정보를 동의하시면 점포선택 화면에 자동으로 현재위치 주변에 있는 점포가 나타납니다. <br>
+                        안하셨다면 점포선택 화면에서 지역을 선택한 후 지도를 움직여 주변 점포를 확인하실 수 있습니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>계정</span>회원가입을 하면 어떤 장점이 있나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        공지사항이나 이벤트 이용시 SNS 또는 메일을 통해 신속한 정보 획득이 가능하며,<br>
+                        이용 회원 한정 쿠폰 사용이 가능합니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>계정</span>주문내역은 어디서 확인 할 수 있나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        회원정보>주문내역 확인에 들어가시면 주문내역을 확인하실 수 있습니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>이용안내</span>도시락 구입 후 몇 시간 안에 섭취해야 하나요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                        매장에서 조리 후 판매하기 때문에 구입 후 2시간이내 섭취를 권장하고 있습니다.<br>
+                        또한 여름철에는 구입 후 바로 섭취하시는 것을 권장합니다.<br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in"><span>이용안내</span>도시락 포장용기 전자레인지 사용 가능한가요?</div>
+                            <div class="arrow"><img src="images/arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                            해뭄도시락 용기는 전자레인지 사용이 가능한 용기 입니다. <br>
+                            전자렌지 사용법은 아래 내용을 참고해주세요. <br> 
+                            <br>
+                            ▶ 전자레인지 (700w 기준) <br>
+                            &nbsp;&nbsp;- 전자레인지 사용 시, 뚜껑을 살짝 열고 조리하세요. <br>
+                            <br>
+                            * 냉장보관<br>
+                            &nbsp;&nbsp;- 1인분 기준 - 2분 30초 조리 <br>
+                            <br>
+                            * ​냉동보관<br>
+                            &nbsp;&nbsp;- 1인분 기준 - 3분 이상 조리
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="page">
+                <h4><a href="#">1</a><a href="#">2</a><a href="#">3</a></h4>
+            </div><!--page E-->
+        </div><!--question_inner E-->
+    </div><!--question E-->
+    <div id="sound">
+        <div id="sound_inner">
+            <h2>고객의 소리</h2>
+            <form id="form" class="form" method="post">
+                <table>
+                    <tr>
+                        <th>유형</th>
+                        <td>
+                            <select name="sound_class" id="sound_class">
+                                <option value="유형">유형</option>
+                                <option value="계정">계정</option>
+                                <option value="결제">결제</option>
+                                <option value="이용관련">이용관련</option>
+                                <option value="이벤트문의">이벤트문의</option>
+                                <option value="건의사항">건의사항</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>아이디</th>
+                        <td><div id="mail"><label for="id"><input type="text"></label></div></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><div id="mail"><label for="email"><input type="email"></label></div></td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td><div id="mail"><label for="tel"><input type="tel"></label></div></td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td><div id="mail"><label for="title"><input type="text"></label></div></td>
+                    </tr><tr>
+                        <th>내용</th>
+                        <td><div id="mail"><textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요."></textarea></div></td>
+                    </tr>
+                    <tr>
+                        <th>첨부파일</th>
+                        <td><div id="mail"><label for="title"><input type="file"></label></div></td>
+                    </tr>
+                </table>
+                <input type="button" value="전송" id="button">
+            </form>
+        </div><!--sound_inner-->
+    </div><!--sound E-->
+    <div id="center">
+        <div id="center_inner">
+            <div id="text">
+                <h1>고객센터</h1>
+                <h2>8282-3322</h2>
+                <p>운영시간: 09:00~18:00</p>
+                <p>주말, 공휴일 휴무</p>
+                <img src="images/center.png" alt="고객센터 아이콘">
+            </div><!--text-->
+        </div><!--center_inner E-->
+    </div><!--center-->
+    <div id="footer">
+        <div id="footer_inner">
+            <img src="images/footer_logo.png" alt="푸터로고">
+            <div id="company">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li>|</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                    <li>|</li>
+                    <li><a href="#">법적고지</a></li>
+                    <li>|</li>
+                    <li><a href="#">협력업체 모집</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <p>
+                    해뭄도시락(주) 아침광역시 점심구 저녁로 000번길 (식사동0가, 해뭄빌딩) 7층  대표이사: 박소연  사업자등록번호:101-000-00000 <br>
+                    COPYRIGHT ⓒ(주)해뭄. ALL RIGHT RESEVED
+                </p>
+                <ol>
+                    <li><a href="#"><img src="images/facebook.png" alt="페북"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/instar.png" alt="인스타"></a></li>
+                </ol>
+            </div><!--company E-->
+        </div><!--footer_inner W-->
+        <div class="fix">
+            <a href="#header">TOP</a>
+        </div><!--top E-->
+    </div><!--footer E-->
+</body>
+</html>
