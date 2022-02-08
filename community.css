@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    line-height: 23px;
+    font-size: 16px;
+    font-family: 'NanumBarunGothic';
+    color: #111;
+    min-width: 1350px;
+    overflow-x: hidden;
+}
+
+/*font*/
+/*ㅡ>기본폰트(나눔바른고딕)*/
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+
+
+   /*header*/
+#header{
+    height: 75px;
+    background: white;
+}
+#header_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+/*header-로고*/
+#logo{
+    float: left;
+    padding-top: 5px;
+}
+
+#logo img{
+    display: block;
+}
+/*header-메뉴*/
+#header_inner ul{
+    float: left;
+    margin-left: 160px;
+}
+#header_inner ul li{
+    float: left;
+    padding: 26px 60px;
+}
+#header_inner ul li a{
+    color: #c52601;
+    font-weight: bold;
+}
+#header_inner ul li a{
+    position: relative;
+}
+
+#header_inner ul li a span{
+    height:3px;
+    width:120%;
+    background-color: orangered;
+    position: absolute;
+    bottom:-27px;
+    left:50%;
+    transform:translateX(-50%) scaleX(0);
+}
+
+#header_inner ul li a:hover span{
+    transform: translateX(-50%) scaleX(1);
+    transition: all 0.3s;}
+    #header_inner ul li a:hover{
+        color: orangered;
+        transition: all 0.3s;
+    }
+
+/*header-회원가입,로그인*/
+#header_inner ol{
+    float: right;
+}
+#header_inner ol li{
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/*main_banner*/
+#mb img{
+    width: 100%;
+    display: block;
+}
+
+/*question 자주하는질문*/
+
+#question_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#question_inner>h2{
+    text-align: left;
+    padding: 10px 15px;
+    border-left: 3px solid orangered;
+    margin-top: 120px;
+}
+/*ㅡ>검색버튼*/
+#class{
+    border: 2px solid #ffc341;
+    padding: 10px 45px 10px 10px;
+    color: #999;
+    font-weight: bold;
+    margin-right: 10px;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    background: url(images/arrow.png) no-repeat 95% center;
+    outline: none;
+}
+#input #text{
+    border: 2px solid #ffc341;
+    padding: 10px 60px 10px 10px;
+    color: #999;
+    font-weight: bold;
+    margin-right: 20px;
+    outline: none;
+}
+#input #button{
+    font-weight: bold;
+    text-align: center;
+    padding: 8.5px 30px;
+    color: white;
+    background: #505050;
+}
+#input{
+    text-align: left;
+    float: right;
+}
+
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+.turn .title img{transform:rotate(-90deg);}
+.arrow img{transition:transform 0.5s;}
+
+/*질문*/
+/*notice*/
+.notice{width:1320px;
+	margin:auto;
+	margin-top:90px;
+    border-top: 3px solid orangered;
+}
+	
+/*제목부분*/
+.title{
+    overflow:hidden;
+	padding:17px 50px;
+    border-bottom: 1px solid #ffc341;
+    font-weight: bold;
+    font-size: 16px;
+}
+.title_in{
+    float:left;
+}
+.title_in span{
+    color: #999;
+    text-align: center;
+    margin-right: 50px;
+    display: inline-block;
+    width: 80px;
+}
+.arrow{
+    float:right;
+	margin-right:5px;
+}
+.text_info{
+    padding:30px;
+	background:#fff9ed;
+	display:none;
+    border-bottom: 1px solid orangered;
+}
+#page{
+    text-align: center;
+    margin-top: 60px;
+}
+/*페이지*/
+#page a{
+    margin: 0 5px;
+}
+#page a:hover{
+    color: orangered;
+}
+
+/*sound 고객의 소리*/
+#sound{
+    height: 900px;
+}
+#sound_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#sound_inner>h2{
+    text-align: left;
+    padding: 10px 15px;
+    border-left: 3px solid orangered;
+    margin-top: 120px;
+}
+#sound_inner input{
+    padding: 5px 10px;
+    margin: 10px 0;
+    width: 1100px;
+    outline: none;
+}
+
+#sound_inner select{
+    padding: 5px 10px;
+    outline: none;
+}
+textarea{
+    width: 1120px;
+    outline: none;
+}
+#sound_inner table th{
+    padding: 10px 30px;
+    background: rgb(255, 241, 216);
+    text-align: center;
+    border-bottom: 2px  solid #ffecc6;
+    width: 80px;
+}
+#sound_inner table td{
+    padding: 10px 20px;
+    border-bottom: 2px  solid #ffecc6;
+}
+#sound_inner table{
+    border-top: 3px solid orangered;
+    border-collapse: collapse;
+    margin: 50px auto 0;
+    width: 1320px;
+    
+}
+#sound_inner #button{
+    font-weight: bold;
+    text-align: center;
+    padding: 8.5px 30px;
+    color: white;
+    background: #505050;
+    margin: 30px 10px;
+    float: right;
+    width: 90px;
+}
+
+/*center 고객센터*/
+#center{
+    height: 300px;
+}
+#center_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#center_inner #text{
+    width: 350px;
+    position: relative;
+}
+#center_inner #text h1{
+    border-bottom: 3px solid #222;
+    padding: 15px 15px;
+    margin-bottom: 5px;
+}
+#center_inner #text h2{
+    color: orangered;
+    font-size: 32px;
+    padding: 20px 15px;
+}
+#center_inner #text p{
+    font-weight: bold;
+    color: #505050;
+    padding-left: 15px;
+}
+#center_inner #text img{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+/*footer*/
+#footer{
+    height: 250px;
+    background: #585858;
+    width: 100%;
+}
+#footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+}
+#footer_inner>img{
+    float: left;
+}
+#footer_inner #company{
+    float: left;
+    text-align: center;
+    padding-left: 206px;
+    color: white;
+}
+#footer_inner #company ul li{
+    float: left;
+    padding:0 5px;
+}
+#footer_inner #company ul li a:hover{
+    border-bottom: 1px solid white;
+}
+#footer_inner #company ol li{
+    float: left;
+    padding:0 5px;
+}
+#footer_inner #company p{
+    clear: both;
+    padding: 10px 0 30px 0;
+}
+#footer_inner #company ul li a{
+    color: white;
+}
+#footer_inner #company ul, #footer_inner #company ol{
+    display: inline-block;
+}
+#footer_inner #company ol li img{
+    opacity: 0.5;
+}
+#footer_inner #company ol li img:hover{
+    opacity: 1;
+}
+.fix{
+    position: fixed;
+    z-index: 10;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    background: #fba653;
+}
+.fix a{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 18px;
+    text-align: center;
+}
